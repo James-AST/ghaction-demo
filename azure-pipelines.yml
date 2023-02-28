@@ -18,3 +18,10 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: Checkmarx AST@2
+  inputs:
+    CheckmarxService: 'Checkmarx'
+    projectName: '$(Build.Repository.Name)'
+    branchName: '$(Build.SourceBranchName)'
+    tenantName: 'master_tenant'
+    additionalParams: '--debug'
