@@ -24,4 +24,4 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'master_tenant'
-    additionalParams: '--debug'
+    additionalParams: --debug --feedback-'James Test Text Field':'From the Command'
