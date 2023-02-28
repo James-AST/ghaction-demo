@@ -24,4 +24,4 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'master_tenant'
-    additionalParams: '--debug --scan-tag $(FEEDBACK-NAME):$(FEEDBACK-VALUE)'
+    additionalParams: '--debug --tags $(FEEDBACK-NAME):$(FEEDBACK-VALUE)'
