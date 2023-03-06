@@ -25,5 +25,5 @@ steps:
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'master_tenant'
     #additionalParams: '--debug'
-    additionalParams: '--debug --tags "feedback-Assignee:$(FEEDBACK-NAME)'
-    #additionalParams: '--debug --tags "feedback-Assignee:James Brotsos"'
+    #additionalParams: '--debug --tags "feedback-Assignee:$(FEEDBACK-NAME)'
+    additionalParams: '--debug --tags "feedback-Assignee:James Brotsos"'
