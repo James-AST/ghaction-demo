@@ -1,0 +1,17 @@
+name: Checkmarx One Scan
+on: [push,pull_request,workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Checkmarx One CLI Action
+        uses: checkmarx/ast-github-action@main #Github Action version
+        with:
+          project_name: AstIntegrationsAllVulTypesRepo_GitActions_JamesTest
+          cx_tenant: master_tenant
+          base_uri: https://ast-master-components.dev.cxast.net
+          cx_client_id: ${{ secrets.CX_CLIENT_ID }}
+          cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
+          additional_params: --project-tags 'feedback-assignee:Yoav ast' --tags 'feedback-assignee:Vered Shahar'
