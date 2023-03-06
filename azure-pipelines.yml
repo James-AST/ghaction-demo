@@ -24,4 +24,4 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'master_tenant'
-    additionalParams: "--debug --tags 'feedback-assignee:James Brotsos'"
+    additionalParams: '--debug --tags "feedback-assignee:James Brotsos"'
