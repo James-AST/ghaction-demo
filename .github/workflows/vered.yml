@@ -16,5 +16,5 @@ jobs:
           base_uri: https://ast-master-components.dev.cxast.net
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
-          additional_params: --project-tags 'feedback-assignee:Yoav ast' --tags 'feedback-assignee:James Brotsos'
+          additional_params: --project-tags 'feedback-assignee:Yoav ast' --tags 'feedback-assignee:James.Brotsos@checkmarx.com'
           #additional_params: --report-format sarif --output-path . --debug --tags 'feedback-assignee:James Brotsos'
